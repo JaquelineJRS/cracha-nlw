@@ -1,0 +1,96 @@
+/*CSS - Cascading Style Sheets*/
+* {
+  /*seletor universal, vai aplicar as propriedades para todos os elementos*/
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --gray: hsl(240, 9%, 89%);
+
+  height: 100%; /*indica que é para o html e body ocupar toda a página*/
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid; /*informa qual será o tipo de exibição dos itens na tela*/
+  place-items: center; /*qual será o alinhamento dos itens na tela */
+}
+
+main {
+  background: url(images/background.svg);
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--gray);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem; /*alterar o tamanho da fonte*/
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--gray); /*trocar a cor da fonte*/
+  text-decoration: none; /*tirar a decoração de sublinhado do link*/
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
