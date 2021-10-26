@@ -6,8 +6,10 @@
 
 html,
 body {
+  --font-color: #e0e0e5;
   --black: hsl(240, 6%, 13%);
   --gray: hsl(240, 9%, 89%);
+  --background-icons: #323238;
 
   height: 100%; /*indica que é para o html e body ocupar toda a página*/
   font-family: 'Roboto', sans-serif;
@@ -80,7 +82,7 @@ p {
 }
 
 ul {
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   list-style: none;
   padding: 0;
@@ -91,7 +93,50 @@ ul {
   justify-content: center;
 }
 
+.icon-link {
+  position: relative;
+  top: 0;
+  padding: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-link:hover {
+  top: -4px;
+  box-shadow: 0 4px 3px var(--background-icons);
+}
+
 footer {
   display: flex;
   justify-content: center;
+}
+
+.rotate {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient-animation {
+  background-size: 250%;
+  animation: gradient-bg 10s ease infinite;
+}
+
+@keyframes gradient-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
