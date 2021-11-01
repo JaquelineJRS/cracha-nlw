@@ -103,6 +103,7 @@ ul {
 .icon-link:hover {
   top: -4px;
   box-shadow: 0 4px 3px var(--background-icons);
+  border-radius: 25px;
 }
 
 footer {
@@ -120,23 +121,5 @@ footer {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-.gradient-animation {
-  background-size: 250%;
-  animation: gradient-bg 10s ease infinite;
-}
-
-@keyframes gradient-bg {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
