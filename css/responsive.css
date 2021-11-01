@@ -1,0 +1,11 @@
+@media (min-width: 480px) {
+  main {
+    width: 358px;
+    height: 540px;
+  }
+
+  main,
+  .gradient-pentagon {
+    border-radius: 15px;
+  }
+}
